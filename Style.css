@@ -16,7 +16,7 @@ a{
     display: inline-block;
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -115,7 +115,7 @@ a{
    column-gap: 5%;
 }
 .searvice-section .container .searvice-manu{
-    max-width: 30%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,7 +136,11 @@ a{
     font-weight: 700;
     margin-top: 36px;
     margin-bottom: 26px;
-}/* <!-- ---------------------------------sarvice Section END-------------------------------- -->  */
+}
+.searvice-section .container .searvice-manu a{
+
+}
+/* <!-- ---------------------------------sarvice Section END-------------------------------- -->  */
 
 
 /* <!-- ------------------------Gallery-Section START--------------------------- --> */
@@ -147,7 +151,7 @@ a{
     column-gap: 1px;
  }
  .Gallery-Section .Gallery-item{
-    max-width: calc(25% - 1px);
+    width: calc(25% - 1px);
     max-height: 330px;
     cursor: pointer;
     position: relative;
@@ -407,35 +411,229 @@ border: 1px solid cyan;
     font-size: 18px;
     color: #fff;
     font-weight: 400;
-    
+   
 }
 
 /* -------------Share-Section end --------- */
 
-/* ---------------- lasrt-page start--------------- */
-.last-page{
-    background-color: #313454;
-}
-.last-page .container{
-   padding-top: 30px;
-   padding-bottom: 32px;
-   text-align: center;
-   padding-left: 100px;
-   padding-right: 100px;
-}
-.last-page .container p{
-   font-size: 14px;
-   font-family: 'Open Sans', sans-serif;
-   color: #808080;
-  
-}
-.last-page .container .fa-solid{
-    font-size: 24px;
-    color: red;
-}
-.last-page .container .color a{
-    font-size: 14px;
-    color: #fff;
-}
 
-/* ---------------- lasrt-page end--------------- */
+/* ==============================Header and bannar Section Responsive  START================================== */
+
+@media screen and ( max-width: 950px) {
+    .header-menu{
+        display: none;
+    }
+    .header-menu.active{
+        display: inline-block;
+        position: absolute;
+        top: 70px;
+        right: 0;
+    }
+    .header-menu .menu{
+        flex-direction: column;
+    }
+    .header-menu .menu li a{
+        color: blue;
+    }
+    .header-menu .menu li{
+        background-color: #45e850;
+        border-radius: 15px;
+        margin: 5px;
+    }
+    .menu-icon{
+        display: inline-block;
+    }
+    .bannar-section .container h1{
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 32px;
+        padding: 0 80px;
+    }
+    .bannar-section .container p{
+        margin-bottom: 70px;
+        padding: 0 104px;
+    }
+}
+@media screen and ( max-width: 685px) {
+    .Header-Section .container{
+        height: 84px;
+    }
+    .bannar-section{
+        padding-top: 190px;
+        padding-bottom: 110px;
+    }
+    .bannar-section .container h1{
+        font-size: 38px;
+        line-height: 42px;
+        margin-bottom: 28px;
+        padding: 0 40px;
+    }
+    .bannar-section .container p{
+        margin-bottom: 50px;
+        padding: 0 54px;
+        font-size: 18px;
+    } 
+    .bannar-section .container a{
+        padding: 14px 25px; 
+    }
+}
+@media screen and ( max-width: 525px){
+    .Header-logo a img{
+        width: 80%; 
+    }
+    .menu-icon i{
+        font-size: 22px;
+    }
+    .Header-Section .container{
+        height: 74pxpx;
+    }
+    .bannar-section{
+        padding-top: 170px;
+        padding-bottom: 90px;
+    }
+    .bannar-section .container h1{
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 24px;
+        padding: 0 10px;
+    }
+    .bannar-section .container p{
+        margin-bottom: 40px;
+        padding: 0 14px;
+        font-size: 16px;
+    } 
+    .bannar-section .container a{
+        padding: 12px 22px; 
+    }
+}
+@media screen and ( max-width: 400px){
+    .Header-logo a img{
+        width: 70%; 
+    }
+    .menu-icon i{
+        font-size: 18px;
+    }
+    .Header-Section .container{
+        height: 64pxpx;
+    }
+    .bannar-section .container h1{
+        font-size: 24px;
+        line-height: 32px;
+        padding: 0;
+    }
+    .bannar-section .container p{
+        margin-bottom: 34px;
+        padding: 0;
+        font-size: 14px;
+    } 
+    .bannar-section .container a{
+        padding: 10px 18px; 
+    }
+}
+@media screen and ( max-width: 350px){
+    .Header-Section .container{
+        height: 54pxpx;
+    }
+    .bannar-section .container h1{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .bannar-section .container p{
+        margin-bottom: 28px;
+        font-size: 14px;
+    } 
+    .bannar-section .container a{
+        padding: 10px 14px; 
+    }
+}
+@media screen and ( max-width: 250px){
+    .Header-Section .container{
+        height: 44pxpx;
+    }
+    .bannar-section .container h1{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .bannar-section .container p{
+        margin-bottom: 26px;
+        font-size: 14px;
+    } 
+    .bannar-section .container a{
+        padding: 10px 12px; 
+    }
+}
+/* ==============================Header and bannar Section Responsive  END================================== */
+
+/* =================================searvice Section Responsive  START=============================== */
+@media screen and ( max-width: 950px){
+    .searvice-section .container {
+        row-gap: 68px;
+        column-gap: 4%;
+    }
+    .searvice-section .container .searvice-manu {
+        max-width: 27%;
+    }
+    .searvice-section .container .searvice-manu p {
+        font-size: 12px;
+        font-weight: 350;
+        padding: 0 24px;
+    }
+    .searvice-section .container .searvice-manu h3 {
+        font-size: 12px;
+        font-weight: 650;
+        margin-top: 28px;
+        margin-bottom: 22px;
+    }
+}
+@media screen and ( max-width: 751px){
+    .searvice-section .container .searvice-manu {
+        max-width: 45%;
+    }
+    .searvice-section .container{
+        margin: 0 70px;
+    }
+    .searvice-section .container .searvice-manu p{
+        font-size: 14px;
+        padding: 0 22px;
+    }
+    
+    .searvice-section .container .searvice-manu h3{
+        margin-top: 28px;
+        margin-bottom: 22px;
+    }
+}
+@media screen and ( max-width: 450px){
+    .searvice-section .container .searvice-manu {
+        max-width: 50%;
+    }
+    .searvice-section .container{
+       margin-right: 0 40px;
+    }
+    .searvice-section .container .searvice-manu p{
+        font-size: 14px;
+        padding: 0 18px;
+    }
+    
+    .searvice-section .container .searvice-manu h3{
+        margin-top: 24px;
+        margin-bottom: 18px;
+    }
+}
+/* =============================searvice Section Responsive  END================================== */
+/* ===========================Gallery-Section Responsive  START============================= */
+@media screen and ( max-width: 950px){
+    .Gallery-Section .Gallery-item{
+        width: 30%;
+    }   
+}
+@media screen and ( max-width: 800px){
+    .Gallery-Section .Gallery-item{
+        width: 35%;
+    }
+}
+@media screen and ( max-width: 600px){
+    .Gallery-Section .Gallery-item{
+        width: 55%;
+    }
+}
+/* ==========================Gallery-Section Responsive END========================== */
