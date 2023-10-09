@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cardo:ital,wght@0,700;1,400&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:ital,wght@0,700;0,800;1,400;1,500;1,600;1,800&family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cardo:ital,wght@0,700;1,400&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:ital,wght@0,700;0,800;1,400;1,500;1,600;1,800&family=Raleway:wght@400;500;600;700;800&display=swap');
 
-/* font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif; */
+
+
 
 *{
     margin: 0;
@@ -15,625 +16,869 @@ a{
     text-decoration: none;
     display: inline-block;
 }
-.container{
-    max-width: 1200px;
+.continer{
+
+    max-width: 1200px;  
     padding: 0 15px;
     margin: 0 auto;
+
 }
 
-/* <!-- ---------------------------------Header Section START-------------------------------- --> */
-.Header-Section{
+/* ......................Heading section START...................  */
+.heading{
+    width: 100%;
     position: fixed;
-    width: 100%;
+
 }
-.Header-logo a img{
-    width: 100%;
-}
-.Header-Section .container{
-    height: 100px;
+.heading .continer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(253, 252, 252 ,0.2);
+
 }
-.menu-icon{
+.heading .continer .header-logo img{
+    width: 100%;
+}
+.heading .continer .manu-icone{
     display: none;
-}
-.menu-icon a i{
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
 }
-.header-menu .menu{
-    font-family: 'Raleway', sans-serif;
+.heading .continer .header-manu .manu-ber{
     display: flex;
 }
-.header-menu .menu li a{
-    font-size: 14px;
+.heading .continer .header-manu .manu-ber li a{
+    padding: 15px 30px;
+    font-size: 13px;
     font-weight: 700;
-    padding: 14px 30px;
-    text-transform: uppercase;
     color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
 }
-.header-menu .menu li:last-child a{
-    padding-right: 0;
+.heading .continer .header-manu .manu-ber li:last-child a{
+   padding-right: 0;
 }
-
-/* * <!-- ---------------------------------Header Section END-------------------------------- --> */ 
-
-/* <!-- ---------------------------------Bannar Section START-------------------------------- --> */
-.bannar-section{
-    background-size: cover ;
-    background-repeat: no-repeat;
-    padding-top: 202px;
+/* ..............................Heading section END.....................  */
+/* ................................Banner section START....................  */
+.banner{
+    width: 100%;
+    background-image: url(./img/Bannar.png);
+}
+.banner .continer{
+    padding-top: 256px;
     padding-bottom: 154px;
-    background-image: url(./Bannar.png);
 }
-.bannar-section .container h1{
+.banner .continer h1{
     font-size: 65px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: #fff;
-    line-height: 68px;
-    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin-bottom: 40px;
-    padding: 0 100px;
+    color: #fff;
+    padding: 0 114px;
+    line-height: 65px;
 }
-.bannar-section .container p{
+.banner .continer p{
+    text-align: center;
     font-size: 22px;
     font-weight: 400;
-    color: #fff;
-    text-align: center;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 80px;
-    padding: 0 120px;
+    color: #fff;
+    margin-top: 44px;
+    padding: 0 125px;
+    line-height: 24px;
+    margin-bottom: 77px;
 }
-.bannar-section .container a{
-    color: #fff;
-    background-color: #E84545;
-    padding: 20px 50px;
-    text-transform: uppercase;
+.banner .continer a{
+    padding: 18px 60px;
+    background-color: #e84545;
     font-size: 13px;
+    font-weight: 400;
     font-family: 'Raleway', sans-serif;
-    border-radius: 3px;
+    border-radius: 4px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-}
-
-
-/* <!-- ---------------------------------Bannar Section END-------------------------------- --> */ 
-
-/* <!-- ---------------------------------sarvice Section START-------------------------------- -->  */
-.searvice-section{
-    padding: 120px 0;
-}
-.searvice-section .container{
-   display: flex;
-   flex-wrap: wrap;
-   row-gap: 78px;
-   column-gap: 5%;
-}
-.searvice-section .container .searvice-manu{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.searvice-section .container .searvice-manu p{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 0 26px;
-}
-
-.searvice-section .container .searvice-manu h3{
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-top: 36px;
-    margin-bottom: 26px;
-}
-.searvice-section .container .searvice-manu a{
-
-}
-/* <!-- ---------------------------------sarvice Section END-------------------------------- -->  */
-
-
-/* <!-- ------------------------Gallery-Section START--------------------------- --> */
-.Gallery-Section{
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 1px;
-    column-gap: 1px;
- }
- .Gallery-Section .Gallery-item{
-    width: calc(25% - 1px);
-    max-height: 330px;
-    cursor: pointer;
-    position: relative;
- }
- .Gallery-Section .Gallery-item img{
-    width: 100%;
-    height: 100%;
- }
- .Gallery-Section .Gallery-item .hovarlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.4s;
-   
- }
- .Gallery-Section .Gallery-item:hover .hovarlay{
-    background-color: rgba(218, 71, 71,0.8);
- }
- .Gallery-Section .Gallery-item .content{
-    position: absolute;
-    left: 50%;
-     top: 50%;
-     transform: translate(-50%, -50%);
-     visibility: hidden;
-  
- }
- .Gallery-item .content h2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #FFF;
- }
- .Gallery-item .content p{
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #FFF;
- }
- .Gallery-Section .Gallery-item:hover .content{
-    visibility: visible;
- }
-/* <!-- ------------------------Gallery-Section END--------------------------- --> */
-
-/* <!-- ------------------------Team-Section start--------------------------- --> */
-
-.Team-Section{
-    padding: 100px 0;
-}
-.Team-Section .container{
-    display: flex;
-    justify-content: space-between;
-}
-.Team-Section .container .Team-member{
-    max-width: calc(25% - 22.5px);
-}
-.Team-member h3{
-    font-family: 'Raleway', sans-serif; 
-    font-size: 22px;
-    font-weight: 400;
-    color: #2d3033;
-    margin-top: 30px;
-    margin-bottom: 16px;
-}
-.Team-member p:first-of-type{
-    color: #e84545;
-    font-family: 'Raleway', sans-serif; 
-    font-size: 13px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-.Team-member p:last-of-type{
-    color: #6c7279;
-    font-family: 'Raleway', sans-serif; 
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.team-member-link{
-    display: flex;
-    column-gap: 4px;
-}
-.team-member-link a{
- border: 1px solid #E8ECEE;
- height: 40px;
- width: 40px;
- display: flex;
- justify-content: center;
- align-items: center;
- transition: 0.4s;
-}
-.team-member-link a i{
-    color: #c6cacc;
-    transition: 0.4s;
-}
-.team-member-link a:hover{
-border: 1px solid cyan;
-}
-.team-member-link a:hover i{
-    color: cyan;
-}
-/* <!-- ------------------------Team-Section END--------------------------- --> */
-
-/* <!-- ------------------------Testmonial-Section start--------------------------- --> */
-.Testmonial-Section{
-    background-color: #53354a;
-}
-.Testmonial-content{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-.Testmonial-content .Bd-item{
-    max-width: 50%;
-}
-.Testmonial-image img{
-    width: 100%;
-    height: 100%;
-}
-.Testmonial-text{
-    padding-left: 86px;
-    padding-top: 115px;
-    padding-right: 280px;
-}
-.Testmonial-text p:first-of-type{
-    font-size: 36px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: 400;
-    color: #FFF; 
-}
-.Testmonial-text p:last-of-type{
-    font-size: 13px;
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-weight: 700;
-    color: #FFF; 
-    margin-top: 30px;
-    text-transform: uppercase;
-}
-.indicator{
-    position: absolute;
-    top: 86%;
-    left: 70%;
-    transform: translate(-86%, -70%);
-    display: flex;
-    column-gap: 8px;
-}
-.indicator-item{
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #897483;
-}
-.indicator-item:nth-child(2){
-    background-color: #FFF;
-}
-/* <!-- ------------------------Testmonial-Section END--------------------------- --> */
-
-/* -----------download Section start------------- */
-.download-section .container{
-    text-align: center;
-
-}
-
-.download-section .container h3{
-    margin-top: 100px;
-    margin-bottom: 22px;
-    font-family: 'Raleway', sans-serif;
-   font-size: 28px;
-   font-weight: 400;
-}
-
-
-.download-section .container p{
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 40px;
-
-}
-.download-section .container a{
-    border: 1px solid #E84545 ;
-    padding: 20px 84px;
-    font-size: 13px;
-    font-weight: 600;
     text-transform: uppercase;
     color: #fff;
-    background-color: #E84545 ;
-    border-radius: 4px;
+}
+/* ..........................Banner section END.....................  */
+
+/* .............................Searvic-section START.................  */
+.searvic-section{
+    padding-top: 120px;
+    padding-bottom: 124px;
+}
+.searvic-section .continer{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 76px;
+    column-gap: 5%;
+}
+.searvic-section .continer .servic-item{
+    width:30%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.searvic-section .continer .servic-item img{
+   width: 100%;
+}
+.searvic-section .continer .servic-item h2{
+    margin-top: 36px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #2d3033;
+}
+.searvic-section .continer .servic-item p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 26px;
+    text-align: center;
+}
+
+/* ..............................Searvic-srction END...............  */
+
+/* .........................Gallery-section START..........................  */
+.main-gallery-section{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+.main-gallery-section .gallery-section{
+   max-width: calc(25% - 1px);
+   cursor: pointer;
+   position: relative;
+}
+.main-gallery-section .gallery-section img{
+    width: 100%;
+    height: 100%;
+}
+.main-gallery-section .gallery-section .color{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.4s all ease-in-out;
+}
+.main-gallery-section .gallery-section:hover .color{
+    background-color: rgba(231, 68, 68,0.8);
+}
+.hover-writing{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    transition: 0.4s;
+}
+.main-gallery-section .gallery-section .hover-writing h2{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.main-gallery-section .gallery-section .hover-writing p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.main-gallery-section .gallery-section:hover .hover-writing{
+    visibility: visible;
+}
+/* ......................................Gallery-section END..................  */
+
+/* ................................Team-section START.......................  */
+.team-section{
+    width: 100%;
+}
+.team-section .continer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+.team-section .continer .img{
+    width: 23%;
+}
+.team-section .continer .img img{
+    width: 100%;
+}
+
+.team-section .continer h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #aeaeaf;
+    margin-top: 30px;
+}
+.team-section .continer h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #f49595;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.team-section .continer p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #72787e;
+    padding-right: 25px;
+}
+.team-section .continer .font-awesome .fa-brands{
+    padding: 10px 15px;
+    border: 1px solid #72787e;
+    font-size: 30px;
+    color: #72787e;
+    
+}
+.team-section .continer .font-awesome{
+    margin-top: 53px;
     margin-bottom: 100px;
-
 }
 
-/* -----------download Section end------------- */
 
+/* ........................Team-section-END.................  */
 
-/* -------------Share-Section start--------- */
-
-.share-section{
-    background-color: #3A3E64;
+/* ...................Testmonial-section START................... */
+.testmonial-section .control{
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: #53354a;
 }
-.share-section .container{
+.testmonial-section .writing h2{
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 42px;
+    color: #fff;
+}
+.testmonial-section .control .img{
+   max-width: 50%;
+ 
+}
+.testmonial-section .control .imgdiv img{
+   /* height: 100px; */
+    width: 100%;
+}
+.testmonial-section .control .writing{ 
+   max-width: 50%;
+   padding-top: 80px;
+   padding-left: 80px;
+   /* padding-right: 150px; */
+  
+}
+.testmonial-section .control .writing p{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.dot{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50%;
+}
+.dot .dottead{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: #5a5858; 
+    transition: 0.3s ease-in-out;
+}
+.dot .dottead:hover{
+    background-color: #fff;
+}
+/* ...........................Testmonial-section-END..............  */
+
+/* ................... Download-section START.................  */
+.download-section{
+    width: 100%;
+}
+.download-section .continer{
+    padding-top: 97px;
+}
+.download-section .continer h2{
+    font-size: 28px;
+    font-weight: light;
+    color: #343537;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.download-section .continer h3{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 22px;
+    color: #2d3033;
+    text-transform: uppercase;
+}
+.download-section .continer a{
+    padding: 20px 83px;
+    background-color: #e84545;
+    border-radius: 4px;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* ......................Download-section END.................  */
+
+/* ........................Location-section START...................  */
+
+.location-section{
+    background-color: #3a3e64;
+}
+.location-section .full-section{
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
-   padding-bottom: 102px;
-   text-align: center;
+    padding-bottom: 100px;
 }
-.share-section .container .location{
-    width: 30%;
+.location-section .full-section .location h2{
+      font-size: 14px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      text-align: center;
 }
-
-
-.share-section .container .share{
-    width: 30%;
-}
-
-.share-section .container .about{
-    width: 30%;
-}
-.share-section .container  h2{
-    color: #fff;
+.location-section .full-section .location p{
     font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    padding-bottom: 22px;
-   
+    font-weight: bold;
+    color: #757893;
+    text-align: center;
 }
-.share-section .container p{
-  
-    font-size: 14px;
-    font-weight: 400;
-    color: #AFB0BC;
-    
-   
+.location-section .full-section .location{
+   width: 30%;
 }
-.share-section .container .location p{
-     padding: 0 100px;
-    
+.location-section .full-section .location1 p{
+    padding-left: 50px;
 }
-.share-section .container .bottom  a:hover{
-    color: #E84545;
-    border: 4px solid #E84545;
-    transition: 0.4s all ease-in-out;
-    background-color: #fff;
+.location-section .full-section .location3 p{
+    text-align: center; 
 }
-.share-section .container .bottom a{
-    padding: 9px 14px;
-    border: 4px solid #fff;
-    font-size: 18px;
+.font-awesomeimg .fa-brands{
+    font-size: 30px;
+    padding: 15px 15px;
+    border: 2px solid #fff; 
     color: #fff;
+}
+.font-awesomeimg{
+    text-align: center;
+}
+/* .......................Location-section END..................  */
+
+/* ..........................Lestpara START.....................  */
+.lest-para{
+    width: 100%;
+    background-color: #313454;
+}
+.lest-para .continer{
+    background-color: #313454;
+    padding: 29px 420px;
+}
+.lest-para .continer p{
+    text-align: center;
+    font-size: 14px;
+    font-family:  'Raleway', sans-serif;
+    color: #666871;
+    padding: 0 20px;
+}
+samp{
+    color: #e84545;
+    font-size: 13px;
+    font-family: OpenSans;
     font-weight: 400;
-   
 }
-
-/* -------------Share-Section end --------- */
-
-
-/* ==============================Header and bannar Section Responsive  START================================== */
-
-@media screen and ( max-width: 950px) {
-    .header-menu{
-        display: none;
-    }
-    .header-menu.active{
-        display: inline-block;
-        position: absolute;
-        top: 70px;
-        right: 0;
-    }
-    .header-menu .menu{
-        flex-direction: column;
-    }
-    .header-menu .menu li a{
-        color: blue;
-    }
-    .header-menu .menu li{
-        background-color: #45e850;
-        border-radius: 15px;
-        margin: 5px;
-    }
-    .menu-icon{
-        display: inline-block;
-    }
-    .bannar-section .container h1{
-        font-size: 45px;
-        line-height: 50px;
-        margin-bottom: 32px;
-        padding: 0 80px;
-    }
-    .bannar-section .container p{
-        margin-bottom: 70px;
-        padding: 0 104px;
-    }
+.smp{
+    color: #fff;
 }
-@media screen and ( max-width: 685px) {
-    .Header-Section .container{
-        height: 84px;
+/* ........................ Lest para END..................  */
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESPONSIVE START %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+/* ============================RESPONSIVE HEADER-SECTION START========================================*/
+    @media screen and (max-width: 970px){
+        .header-manu{
+            display: none;
+        }
+        .header-manu.Active{
+            display: inline-block;
+        }
+        .heading .continer .header-manu .manu-ber{
+            flex-direction: column;
+            position: absolute;
+            top: 100px;
+            right: 0;
+        }
+        .heading .continer .header-manu .manu-ber li a{
+            color: rgb(19, 21, 20);
+            margin-top: 10px;
+        }
+        .heading .continer .header-manu .manu-ber li{
+            background-color: gold;
+            margin-top: 3px;
+            border-radius: 50px;
+        }
+        .heading .continer .manu-icone{
+            display: inline-block;
+        }
     }
-    .bannar-section{
-        padding-top: 190px;
-        padding-bottom: 110px;
+    @media screen and (max-width: 560px){
+        .heading .continer .header-logo img{
+            width: 80%;
+        }
+        .heading .continer{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }  
     }
-    .bannar-section .container h1{
-        font-size: 38px;
-        line-height: 42px;
-        margin-bottom: 28px;
-        padding: 0 40px;
+    @media screen and (max-width: 380px){
+    .heading .continer .header-logo img{
+        width: 70%;
     }
-    .bannar-section .container p{
-        margin-bottom: 50px;
-        padding: 0 54px;
-        font-size: 18px;
-    } 
-    .bannar-section .container a{
-        padding: 14px 25px; 
+    .heading .continer{
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
+    .banner .continer a{
+        padding: 15px 25px;
+ }
 }
-@media screen and ( max-width: 525px){
-    .Header-logo a img{
-        width: 80%; 
+/*==========================RESPONSIVE HEADER-SECTION END=============================*/
+
+/*==========================RESPONSIVE BANNER-SECTION START=============================*/
+@media screen and (max-width: 860px){
+    .banner .continer h1{
+        font-size: 50px;
+        padding: 0 90px;
+        line-height: 55px;
     }
-    .menu-icon i{
+    .banner .continer p{
+       
         font-size: 22px;
+        padding: 0 115px;
+        line-height: 24px;
+        margin-bottom: 60px;
     }
-    .Header-Section .container{
-        height: 74pxpx;
+}
+@media screen and (max-width: 785px){
+    .banner .continer h1{
+        font-size: 40px;
+        line-height: 44px;
     }
-    .bannar-section{
+    .banner .continer p{
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 660px){
+    .banner .continer{
         padding-top: 170px;
-        padding-bottom: 90px;
+        padding-bottom: 80px;
+    } 
+    .banner .continer h1{
+        font-size: 40px;
+        padding: 0 70px;
+        line-height: 42px;
     }
-    .bannar-section .container h1{
-        font-size: 32px;
-        line-height: 36px;
-        margin-bottom: 24px;
+    .banner .continer p{
+        font-size: 15px;
+        padding: 0 80px;
+        line-height: 17px;
+        margin-bottom: 40px;
+    }
+    .banner .continer a{
+        padding: 15px 30px;
+ }
+}
+@media screen and (max-width: 560px){
+    .banner .continer h1{
+        font-size: 30px;
+        padding: 0 70px;
+        line-height: 35px;
+    }
+    .banner .continer p{
+        font-size: 15px;
+        padding: 0 60px;
+        line-height: 16px;
+        margin-bottom: 45px;
+    }
+}
+@media screen and (max-width: 460px){
+    .banner .continer h1{
+        padding: 0 20px;
+       
+    }
+    .banner .continer p{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 380px){
+    .banner .continer h1{
+        font-size: 20px;
+        padding: 0 30px;
+        line-height: 27px;
+    }
+    .banner .continer p{
+        font-size: 15px;
+        padding: 0 30px;
+        line-height: 16px;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 355px){
+    .banner .continer h1{
         padding: 0 10px;
     }
-    .bannar-section .container p{
-        margin-bottom: 40px;
-        padding: 0 14px;
-        font-size: 16px;
-    } 
-    .bannar-section .container a{
-        padding: 12px 22px; 
+    .banner .continer p{
+        padding: 0 10px;
     }
 }
-@media screen and ( max-width: 400px){
-    .Header-logo a img{
-        width: 70%; 
-    }
-    .menu-icon i{
-        font-size: 18px;
-    }
-    .Header-Section .container{
-        height: 64pxpx;
-    }
-    .bannar-section .container h1{
-        font-size: 24px;
-        line-height: 32px;
-        padding: 0;
-    }
-    .bannar-section .container p{
-        margin-bottom: 34px;
-        padding: 0;
-        font-size: 14px;
-    } 
-    .bannar-section .container a{
-        padding: 10px 18px; 
-    }
-}
-@media screen and ( max-width: 350px){
-    .Header-Section .container{
-        height: 54pxpx;
-    }
-    .bannar-section .container h1{
-        font-size: 22px;
-        line-height: 26px;
-    }
-    .bannar-section .container p{
-        margin-bottom: 28px;
-        font-size: 14px;
-    } 
-    .bannar-section .container a{
-        padding: 10px 14px; 
-    }
-}
-@media screen and ( max-width: 250px){
-    .Header-Section .container{
-        height: 44pxpx;
-    }
-    .bannar-section .container h1{
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .bannar-section .container p{
-        margin-bottom: 26px;
-        font-size: 14px;
-    } 
-    .bannar-section .container a{
-        padding: 10px 12px; 
-    }
-}
-/* ==============================Header and bannar Section Responsive  END================================== */
+/*==========================RESPONSIVE BANNER-SECTION END=============================*/
 
-/* =================================searvice Section Responsive  START=============================== */
-@media screen and ( max-width: 950px){
-    .searvice-section .container {
-        row-gap: 68px;
-        column-gap: 4%;
-    }
-    .searvice-section .container .searvice-manu {
-        max-width: 27%;
-    }
-    .searvice-section .container .searvice-manu p {
-        font-size: 12px;
-        font-weight: 350;
-        padding: 0 24px;
-    }
-    .searvice-section .container .searvice-manu h3 {
-        font-size: 12px;
-        font-weight: 650;
-        margin-top: 28px;
-        margin-bottom: 22px;
+/*==========================RESPONSIVE SERVIC-SECTION START=============================*/
+@media screen and (max-width: 900px){
+    .searvic-section .continer .servic-item p{
+        padding: 0 16px;
+        text-align: center;
     }
 }
-@media screen and ( max-width: 751px){
-    .searvice-section .container .searvice-manu {
-        max-width: 45%;
+@media screen and (max-width: 800px){
+    .searvic-section .continer .servic-item img{
+        width: 90%;
+     }
+     .searvic-section .continer .servic-item{
+        width:47%;
     }
-    .searvice-section .container{
-        margin: 0 70px;
+}
+@media screen and (max-width: 785px){
+    .searvic-section .continer .servic-item img{
+        width: 80%;
+     }
+     .searvic-section .continer .servic-item{
+        width:47%;
     }
-    .searvice-section .container .searvice-manu p{
-        font-size: 14px;
-        padding: 0 22px;
+}
+@media screen and (max-width: 660px){
+    .searvic-section .continer .servic-item img{
+        width: 70%;
+     }
+     .searvic-section{
+        padding-top: 100px;
+        padding-bottom: 98px;
     }
+}
+@media screen and (max-width: 480px) {
+    .searvic-section .continer .servic-item{
+        width:100%;
+    }
+    .searvic-section .continer .servic-item img{
+       width: 65%;
+    }
+    .searvic-section .continer .servic-item h2{
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+    .searvic-section{
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+    .searvic-section .continer .servic-item p{
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 380px){
+    .searvic-section .continer .servic-item{
+       width:100%;
+   }
+   .searvic-section .continer .servic-item img{
+      width: 50%;
+   }
+   .searvic-section .continer .servic-item h2{
+       margin-top: 24px;
+       margin-bottom: 18px;
+   }
+   .searvic-section{
+       padding-top: 80px;
+       padding-bottom: 70px;
+   }
+   .searvic-section .continer .servic-item p{
+      
+       padding: 0;
+   }
+   .searvic-section .continer{
+       row-gap: 60px; 
+   }
+}
+ /*==========================RESPONSIVE SERVIC-SECTION END=============================*/
+
+/*==========================RESPONSIVE GALLERY-SECTION START=============================*/
+@media screen and (max-width: 900px){
+    .main-gallery-section .gallery-section{
+        max-width: calc(33.33% - 1px);
+     }
+}
+@media screen and (max-width: 800px){
+    .main-gallery-section .gallery-section{
+        max-width: calc(50% - 1px);
+     }
+}
+@media screen and (max-width: 480px){
+    .main-gallery-section .gallery-section{
+        max-width: calc(100% - 1px);
+     }
+}
+/*==========================RESPONSIVE GALLERY-SECTION END=============================*/
+
+/*==========================RESPONSIVE TEAM-SECTION START=============================*/
+@media screen and (max-width: 900px){
     
-    .searvice-section .container .searvice-manu h3{
-        margin-top: 28px;
-        margin-bottom: 22px;
+}
+@media screen and (max-width: 860px){
+    .team-section .continer .img{
+        width: 48%;
     }
 }
-@media screen and ( max-width: 450px){
-    .searvice-section .container .searvice-manu {
-        max-width: 50%;
+@media screen and (max-width: 480px){
+    .team-section .continer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 60px;
+
+}
+.team-section .continer .img{
+    width: 100%;
+}
+.team-section .continer .img img{
+    width: 100%;
+}
+
+.team-section .continer h2{
+   
+    font-size: 22px;
+   
+    margin-top: 30px;
+}
+.team-section .continer h3{
+    margin-bottom: 20px; 
+}
+.team-section .continer p{
+    padding-right: 0;
+}
+.team-section .continer .font-awesome{
+    margin-top: 33px;
+    margin-bottom: 50px;
+}
+}
+/*==========================RESPONSIVE TEAM-SECTION END=============================*/
+
+/*==========================RESPONSIVE TESTMONIAL-SECTION START=============================*/
+@media screen and (max-width:1200px){
+    .testmonial-section .control .writing{ 
+        padding-left: 40px;
+     }
+} 
+@media screen and (max-width:1160px){
+    .testmonial-section .writing h2{
+        font-size: 28px;
+       
     }
-    .searvice-section .container{
-       margin-right: 0 40px;
+    .testmonial-section .control .writing{ 
+        padding-left: 30px;
+     }
+}
+@media screen and (max-width:1135px){
+    .testmonial-section .writing h2{
+        font-size: 20px;
+       
     }
-    .searvice-section .container .searvice-manu p{
+    .testmonial-section .control .img{
+        max-width: 40%;
+      
+     }
+    .testmonial-section .control .writing{ 
+        max-width: 60%;
+        padding-left: 25px;
+     }
+}
+@media screen and (max-width:895px){
+    .testmonial-section .control .img{
+        max-width: 30%;
+      
+     }
+    .testmonial-section .control .writing{ 
+        max-width: 70%;
+        padding-left: 20px;
+        padding-top: 50px;
+     }
+}/
+@media screen and (max-width:760px){
+    .testmonial-section .control{
+        flex-wrap: wrap;
+    }
+    .testmonial-section .control .img{
+        max-width: 100%;
+     }
+    .testmonial-section .control .writing{ 
+        max-width: 100%;
+        padding-left: 30px;
+        padding-top: 40px;
+     }
+     .dot{
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:360px){
+    .testmonial-section .control .writing{ 
+        padding-top: 30px;
+     }
+     .dot{
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-bottom: 10px;
+    }
+}
+/*==========================RESPONSIVE TESTMONIAL-SECTION END=============================*/
+
+/*==========================RESPONSIVE DOWNLOAD-SECTION START=============================*/
+@media screen and (max-width:685px){
+    .download-section .continer h2{
+        font-size: 22px;
+    }
+    .download-section .continer a{
+        padding: 20px 63px;
+       
+    }
+}
+@media screen and (max-width:605px){
+    .download-section .continer a{
         font-size: 14px;
-        padding: 0 18px;
-    }
-    
-    .searvice-section .container .searvice-manu h3{
-        margin-top: 24px;
-        margin-bottom: 18px;
+        padding: 20px 53px; 
     }
 }
-/* =============================searvice Section Responsive  END================================== */
-/* ===========================Gallery-Section Responsive  START============================= */
-@media screen and ( max-width: 950px){
-    .Gallery-Section .Gallery-item{
-        width: 30%;
-    }   
-}
-@media screen and ( max-width: 800px){
-    .Gallery-Section .Gallery-item{
-        width: 35%;
+@media screen and (max-width:540px){
+    .download-section .continer a{
+        font-size: 14px;
+        padding: 20px 43px; 
     }
 }
-@media screen and ( max-width: 600px){
-    .Gallery-Section .Gallery-item{
-        width: 55%;
+@media screen and (max-width:440px){
+    .download-section .continer{
+        padding-top: 70px;
+    }
+    .download-section .continer a{
+        
+        margin-bottom: 60px;
+       
     }
 }
-/* ==========================Gallery-Section Responsive END========================== */
+@media screen and (max-width:350px){
+    .download-section .continer a{
+        padding: 15px 33px; 
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+}
+/*==========================RESPONSIVE DOWNLOAD-SECTION START=============================*/
+
+/*==========================RESPONSIVE LOCATION-SECTION START=============================*/
+ @media screen and (max-width: 670px){
+    .font-awesomeimg .fa-brands{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+  .location-section .full-section .location1 p {
+    padding-left: 20px;
+}
+} 
+ @media screen and (max-width: 490px){
+    .location-section .full-section{
+        padding-top: 50px;
+        padding-bottom: 70px;
+        flex-wrap: wrap;
+    }
+    .location-section .full-section .location{
+        width: 100%;
+     }
+     .location-section .full-section .location h2{
+        margin-bottom: 10px;
+  }
+  .location-section .full-section .location p{
+    font-size: 17px;
+}
+  .font-awesomeimg{
+    margin-bottom: 30px;
+}
+.location-section .full-section .location2 h2{
+   margin-top: 30px;
+}
+.location-section .full-section .location3 p{
+    padding: 0 20px;
+}
+  }
+/*==========================RESPONSIVE LOCATION-SECTION END=============================*/
+
+/*==========================RESPONSIVE LAST-PARA-SECTION START=============================*/
+@media screen and (max-width: 1160px){
+.lest-para .continer{
+    padding: 29px 320px;
+}
+}
+@media screen and (max-width: 880px){
+    .lest-para .continer{
+        padding: 29px 220px;
+    }
+    .lest-para .continer p{
+        font-size: 22px;
+    }
+    }
+@media screen and (max-width: 760px){
+    .lest-para .continer{
+        padding: 29px 120px;
+    }
+    .lest-para .continer p{
+        font-size: 20px;
+    }
+    }
+@media screen and (max-width: 540px){
+    .lest-para .continer{
+        padding: 19px 50px;
+    }
+    .lest-para .continer p{
+        font-size: 16px;
+    }
+    }
+   /*==========================RESPONSIVE LAST-PARA-SECTION START=============================*/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESPONSIVE END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
